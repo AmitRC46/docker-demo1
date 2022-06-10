@@ -20,8 +20,8 @@ RUN add-apt-repository ppa:webupd8team/java && \
 
 # Install Java 8
 RUN apt-get update && \
-    apt-get --yes --no-install-recommends install oracle-java8-installer
-    
+    apt-get install java
+
 RUN mkdir /opt/tomcat
 WORKDIR /opt/tomcat
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.64/bin/apache-tomcat-9.0.64.tar.gz .
