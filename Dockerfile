@@ -9,7 +9,7 @@
 # Start tomcat services                       -CMD
 
 FROM centos:latest
-RUN yum install java
+RUN yum install java -y
 RUN mkdir /opt/tomcat
 WORKDIR /opt/tomcat
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.64/bin/apache-tomcat-9.0.64.tar.gz .
