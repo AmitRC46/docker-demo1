@@ -1,0 +1,5 @@
+Log into your system as a user with sudo privileges.
+Update your system: sudo yum update -y .
+Install Docker: sudo yum install docker-engine -y.
+Start Docker: sudo service docker start.
+Verify Docker: sudo docker run hello-world.
