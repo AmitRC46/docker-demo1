@@ -8,7 +8,11 @@
 # tell to docker that it runs on port 8080    -EXPOSE
 # Start tomcat services                       -CMD
 
+# Pulling the base image
 FROM ubuntu:latest
+# Authore details
+MAINTAINER Amata <Amit.malakar43@gmail.com>
+# Installing java
 RUN apt-get update && \
 	apt-get install -y openjdk-8-jdk && \
 	apt-get install -y ant && \
